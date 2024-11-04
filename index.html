@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Excel-Datei bearbeiten</h1>
+        <input type="file" id="fileInput" accept=".xlsx, .xls" />
+        <button id="loadButton">Datei laden</button>
+        <div id="tableContainer">
+            <table id="dataTable"></table>
+        </div>
+        <button id="addRowButton">Neue Zeile hinzufügen</button>
+        <button id="saveButton">Datei speichern</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
